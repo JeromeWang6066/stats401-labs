@@ -38,7 +38,8 @@ p {
     border-radius: 5px;
 }
 
-.lab-nav a:hover {
+.lab-nav a:hover,
+.lab-nav a.current {
     background: #333;
     color: white;
 }
