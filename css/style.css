@@ -68,3 +68,26 @@ p {
     color: white;
     border-radius: 5px;
 }
+
+.tooltip {
+    position: absolute;
+    background: white;
+    border: 1px solid #aaa;
+    padding: 8px 10px;
+    border-radius: 4px;
+    pointer-events: none;
+    opacity: 0;
+    font-size: 14px;
+}
+
+.chart-caption {
+    color: #555;
+    font-size: 14px;
+    max-width: 920px;
+}
+
+.legend-label,
+.axis-label {
+    font-size: 12px;
+    fill: #333;
+}

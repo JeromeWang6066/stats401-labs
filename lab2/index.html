@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lab 2</title>
+    <title>Lab 2 - Multivariate Visualization</title>
     <link rel="stylesheet" href="../css/style.css">
 </head>
 
@@ -23,10 +23,40 @@
         <a href="../lab10/index.html">Lab 10</a>
     </nav>
 
-    <h1>Lab 2</h1>
+    <h1>Lab 2: Multivariate Visualization with D3</h1>
     <p>
-        Lab 2 will be added here.
+        This visualization compares 12 cities across population,
+        temperature, development level, and region.
     </p>
+
+    <div id="chart"></div>
+    <div id="tooltip" class="tooltip"></div>
+    <p class="chart-caption">
+        X is population. Y is average temperature.
+        Circle size is development level. Color is region.
+        Hover a point for the city name and exact values.
+    </p>
+
+    <h2>Design Justification</h2>
+    <p>
+        I put population on the x-axis and temperature on the y-axis.
+        Population is a ratio, so a linear x-axis starting at 0 makes city
+        size easy to compare. Temperature is interval, so the y-axis keeps
+        the gaps between 8°C and 26°C intact. Development is ordinal
+        (Low, Medium, High), so I mapped it to circle radius: Low is
+        smallest, High is largest. Region is a category, so each region has
+        its own color. Hovering a point shows the city name and the raw
+        numbers. The chart shows a downward slope: larger cities tend to be
+        cooler and more developed, while the small southern cities sit high
+        on the temperature axis with small circles.
+    </p>
+
+    <p class="back-home-row">
+        <a class="back-home" href="../index.html">Back to homepage</a>
+    </p>
+
+    <script src="../js/d3.min.js"></script>
+    <script src="lab2.js"></script>
 </body>
 
 </html>
