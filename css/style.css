@@ -91,3 +91,52 @@ p {
     font-size: 12px;
     fill: #333;
 }
+
+.table-wrap {
+    margin-top: 20px;
+    max-height: 640px;
+    overflow: auto;
+}
+
+#data-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+}
+
+#data-table th,
+#data-table td {
+    padding: 8px 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+#data-table th {
+    position: sticky;
+    top: 0;
+    background: #f1f1f1;
+    cursor: pointer;
+    user-select: none;
+    white-space: nowrap;
+}
+
+#data-table th .col-name {
+    margin-right: 6px;
+}
+
+.sort-arrows {
+    display: inline-flex;
+    flex-direction: column;
+    vertical-align: middle;
+    font-size: 8px;
+    line-height: 1;
+    color: #bbb;
+}
+
+.sort-arrows .active {
+    color: #333;
+}
+
+#data-table tbody tr:hover {
+    background: #fafafa;
+}
