@@ -60,6 +60,12 @@ p {
     text-align: right;
 }
 
+.page-top-link {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 0 8px;
+}
+
 .back-home {
     display: inline-block;
     padding: 10px 16px;
@@ -96,6 +102,9 @@ p {
     margin-top: 20px;
     max-height: 640px;
     overflow: auto;
+    border: 1px solid #9bb6d1;
+    border-radius: 6px;
+    background: #f4f8fc;
 }
 
 #data-table {
@@ -106,15 +115,24 @@ p {
 
 #data-table th,
 #data-table td {
-    padding: 8px 10px;
+    padding: 9px 12px;
     text-align: left;
-    border-bottom: 1px solid #ddd;
+    border: 1px solid #c5d4e4;
+    vertical-align: top;
+}
+
+#data-table td:nth-child(2),
+#data-table td:nth-child(3),
+#data-table td:nth-child(4),
+#data-table td:nth-child(5) {
+    white-space: nowrap;
 }
 
 #data-table th {
     position: sticky;
     top: 0;
-    background: #f1f1f1;
+    background: #2f5d8a;
+    color: white;
     cursor: pointer;
     user-select: none;
     white-space: nowrap;
@@ -130,13 +148,21 @@ p {
     vertical-align: middle;
     font-size: 8px;
     line-height: 1;
-    color: #bbb;
+    color: #9bb6d1;
 }
 
 .sort-arrows .active {
-    color: #333;
+    color: #fff;
+}
+
+#data-table tbody tr:nth-child(odd) {
+    background: #ffffff;
+}
+
+#data-table tbody tr:nth-child(even) {
+    background: #e7f0f8;
 }
 
 #data-table tbody tr:hover {
-    background: #fafafa;
+    background: #d3e4f4;
 }
